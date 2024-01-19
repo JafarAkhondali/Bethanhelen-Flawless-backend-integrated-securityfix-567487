@@ -123,7 +123,7 @@ header .quote a{
   font-weight: 300;
   font-size: 20px;
   line-height: 30px;
-  padding-right: 130px;
+  padding-right: 100px;
 }
 .section-one-btn{
   color: var(--bg-white);
@@ -604,6 +604,7 @@ footer{
 }
 .slide-one img{
   margin-bottom: 32px;
+  width: 30%;
 }
 .slide-one-text{
   font-family: Poppins;
@@ -1555,7 +1556,7 @@ footer{
 }
 .slide-one img{
   margin-bottom: 32px;
-  width: 100%;
+  width: 50%;
 }
 .slide-one-text{
   font-family: Poppins;

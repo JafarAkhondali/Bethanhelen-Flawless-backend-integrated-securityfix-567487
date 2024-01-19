@@ -1,0 +1,17 @@
+{
+  "name": "flawless-visionview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemailer": "^6.9.8",
+    "nodemon": "^3.0.3",
+    "querystring": "^0.2.1"
+  }
+}

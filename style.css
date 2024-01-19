@@ -37,7 +37,7 @@ body{
 }
 /* header begins*/
 header{
-  position: absolute;
+  position: fixed;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -45,6 +45,7 @@ header{
   padding: 15px 73px;
   background-color:var(--black) ;
   color: var(--bg-white);
+  z-index: 1;
 }
 header .navbar{
   position: relative;
@@ -94,6 +95,7 @@ header .quote a{
   height: 932px;
   padding: 0 73px;
   background-color: var(--bg-blue);
+  overflow: hidden;
 }
 
 .display-one{
@@ -645,6 +647,13 @@ text-align: left;
 margin-bottom: 32px;
 
 }
+.slide-one img{
+  margin-bottom: 32px;
+  width: 100%;
+}
+.slide-one{
+  width: 200px;
+}
 .slide-three{
   display: flex;
   flex-direction: column;
@@ -674,7 +683,7 @@ margin-bottom: 32px;
   padding-left: 8px;
   width: 268px;
 }
-.slide-three .pin a{
+.slide-three .pin p{
   text-decoration: none;
   color: var(--white);
   padding-left: 8px;
@@ -1082,7 +1091,7 @@ header{
 
   /*hero section*/
   .section-one{
-    height: 1032px;
+    height: fit-content;
     padding: 0 73px;
     background-color: var(--bg-blue);
     width: 100%;
@@ -1098,7 +1107,6 @@ header{
   }
   .display-one .text-box{
     width: 100%;
-    margin-top: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1157,9 +1165,8 @@ header{
   /* hero section ends */
   /* ============================== About section two Styling ==================================== */
 .about-us{
-  height: 100%;
+  height: fit-content;
   width: 100%;
-  margin-top: 65rem;
   padding: 0 28px;
 }
 .section-three {
@@ -1556,7 +1563,7 @@ footer{
 }
 .slide-one img{
   margin-bottom: 32px;
-  width: 50%;
+  width: 130%;
 }
 .slide-one-text{
   font-family: Poppins;

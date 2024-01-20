@@ -249,7 +249,7 @@ padding-bottom: 62px;
 .section-four{
   background-color: var(--black);
   color: var(--white);
-  height: 915px;
+  height: fit-content;
  margin: 0 auto;
 }
 
@@ -278,6 +278,7 @@ margin-bottom: 44px;
   justify-content: space-between;
   width: 1224px;
   margin: 0 auto;
+  height: fit-content;
 }
 .blocks{
   display: flex;
@@ -842,8 +843,10 @@ input{
   width: 634px;
   height: 80px;
   gap: 12px;
+  font-weight: 250;
   font-size: 20px;
   caret-color: var(--primary-blue);
+   font-family: Poppins;
 }
 input[type='text'],[type='email'],[type='tel']{
   background: #F1F0F0; 
@@ -906,7 +909,7 @@ textarea{
 .popup{
     background: white; 
     width: 500px;
-    height: 450px;
+    height: 500px;
     border-radius: 20px;
     padding: 30px 20px;
     box-sizing: border-box;
@@ -917,7 +920,7 @@ textarea{
     transform: translate(-50%, -50%) scale(0.5);
     transition: opacity 1000ms ease-in-out, top 1500ms ease-in-out, transform 1500ms ease-in-out;
     box-shadow: 0 5px 30px rgba(0,0,0,.30);
-
+    padding-top: 60px;
 }
 .popup.active{
     opacity: 1;
@@ -932,16 +935,14 @@ textarea{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.popup .dismiss-btn{
+/*.popup .dismiss-btn{
     margin-left: 400px;
     font-size: 32px;
     cursor: pointer;
-}
-.popup .icon{
-    margin:24px 0px;
-}
+}*/
+
 .popup .title{
-    margin:8px 0px;
+margin:8px 0px;
 font-family: Poppins;
 font-size: 30px;
 font-weight: 600;
@@ -987,7 +988,7 @@ transition: all 300ms ease-in-out;
 .popup > div{
     position: relative;
     top: 10px;
-    /* opacity: 0; */
+/*     opacity: 0; */
 }
 .popup.active > div{
     top: 0px;
@@ -1250,7 +1251,7 @@ padding-bottom: 62px;
  .section-four{
   background-color: var(--black);
   color: var(--white);
-  height: 2600px;
+  height: fit-content;
   width: 100%;
  margin: 0px;
 }
@@ -1282,6 +1283,7 @@ padding-left: 28px;
   justify-content: space-between;
   width: 100%;
   margin-left: 28px;
+  height: fit-content;
 }
 .blocks{
   display: flex;
@@ -1885,112 +1887,13 @@ textarea{
 
 
 /* ======== Modal Styling ================= */
-.popup{
-  background: white; 
-  width: 500px;
-  height: 450px;
-  border-radius: 20px;
-  padding: 30px 20px;
-  box-sizing: border-box;
-  z-index: 2;
-  text-align: center;
-  opacity: 0;
-  top: -100%;
-  transform: translate(-50%, -50%) scale(0.5);
-  transition: opacity 1000ms ease-in-out, top 1500ms ease-in-out, transform 1500ms ease-in-out;
-  box-shadow: 0 5px 30px rgba(0,0,0,.30);
 
-}
 .popup.active{
-  opacity: 1;
-  top: 70%;
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 500ms cubic-bezier(0.18, 0.89, 0.43, 1.19);
+    opacity: 1;
+    top: 70%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 500ms cubic-bezier(0.18, 0.89, 0.43, 1.19);
+}
 
-}
-.center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.popup .dismiss-btn{
-  margin-left: 400px;
-  font-size: 32px;
-  cursor: pointer;
-}
-.popup .icon{
-  margin:24px 0px;
-}
-.popup .title{
-  margin:8px 0px;
-font-family: Poppins;
-font-size: 30px;
-font-weight: 600;
-line-height: 57px;
-letter-spacing: 0em;
-text-align: center;
-color: #2395D2;
-
-}
-.popup .description{
-  margin: 12px 0px;
-font-family: Poppins;
-font-size: 20px;
-font-weight: 300;
-line-height: 36px;
-letter-spacing: 0em;
-text-align: center;
-}
-.popup .gotohome a{
-  text-decoration: none;
-  color: white;
-}
-.popup .gotohome{
-  margin: 24px auto 12px auto;
-font-family: Poppins;
-font-size: 20px;
-font-weight: 300;
-line-height: 36px;
-letter-spacing: 0em;
-text-align: center;
-background-color: #2395D2;
-color: white;
-width: 40%;
-padding: 8px 0;
-border-radius: 10px;
-box-shadow: var(--shadow);
-cursor: pointer;
-transition: all 300ms ease-in-out;
-}
-.popup .gotohome:hover{
-  background-color: var(--hover-blue);
-}
-.popup > div{
-  position: relative;
-  top: 10px;
-  opacity: 0;
-}
-.popup.active > div{
-  top: 0px;
-  opacity: 1;
-}
-.popup.active .icon{
-  transition: all 500ms ease-in-out 250ms;
-}
-.popup.active .title{
-  transition: all 500ms ease-in-out 300ms;
-}
-.popup.active .description{
-  transition: all 500ms ease-in-out 350ms;
-}
-.popup.active .gotohome{
-  transition: all 500ms ease-in-out 400ms;
-}
-.contact-section#blur.active{
-  filter: blur(2px);
-  pointer-events: none;
-  user-select: none;
-}
 }
 

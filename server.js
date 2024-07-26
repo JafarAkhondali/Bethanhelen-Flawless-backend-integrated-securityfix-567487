@@ -6,6 +6,11 @@ const qs=require('querystring');
 const nodemailer=require("nodemailer");
 
 const server=http.createServer((req,res)=>{
+    if (path.normalize(decodeURI(req.url)) !== decodeURI(req.url)) {
+        res.statusCode = 403;
+        res.end();
+        return;
+    }
     const decodeURL=decodeURI(req.url);
     let requestedURL=decodeURL==='/' ? '/index.html' : decodeURL;
     if(req.method==='GET'){
